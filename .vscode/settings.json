@@ -19,6 +19,14 @@
         "/^python c:\\\\usr\\\\form-to-pdf\\\\list_fields\\.py$/": {
             "approve": true,
             "matchCommandLine": true
+        },
+        "/^dotnet run --project tools/FormToPdfFiller$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^& \"C:\\\\usr\\\\form-to-pdf\\\\tools\\\\FormToPdfFiller\\\\bin\\\\Debug\\\\net8\\.0\\\\FormToPdfFiller\\.exe\"$/": {
+            "approve": true,
+            "matchCommandLine": true
         }
     }
 }

@@ -112,3 +112,26 @@ Proceed now:
 2) Implement extraction + type inference + option extraction when possible
 3) Run it and fix compile/runtime issues until it works
 4) Ensure mapping.json and data.json are generated in /output and included in the workspace
+
+---
+
+## Filling & merging utility
+
+A second .NET console tool is provided under `tools/FormToPdfFiller`
+that reads the `output/mapping.json` and `output/data.json` files, fills
+and flattens the corresponding PDF forms, and merges all resulting pages
+into a single PDF located at `output/merged.pdf`.
+
+Use it after generating the JSON files:
+
+```bash
+dotnet run --project tools/FormToPdfFiller
+```
+
+The program prints a per‑PDF summary of fields filled and reports the output
+path. Flattening is performed by removing the AcroForm dictionary after
+populating values, leaving appearance streams on each page.
+
+A Python helper script (`fill_and_merge.py`) is also included for environments
+without the .NET SDK; it reads the same JSON files and produces `output/merged.pdf`.
+

@@ -1,0 +1,14 @@
+{
+  "form_to_flatten.pdf": {
+    "source": "samples/form_to_flatten.pdf",
+    "fields": {}
+  },
+  "Form.pdf": {
+    "source": "samples/Form.pdf",
+    "fields": {}
+  },
+  "Sample-Fillable-PDF.pdf": {
+    "source": "samples/Sample-Fillable-PDF.pdf",
+    "fields": {}
+  }
+}

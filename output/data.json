@@ -3,31 +3,24 @@
     "form_to_flatten.pdf": {
       "fields": {
         "Group2": {
-          "type": "checkbox",
           "value": true
         },
         "Group3": {
-          "type": "checkbox",
           "value": true
         },
         "Group4": {
-          "type": "checkbox",
           "value": true
         },
         "Check Box3": {
-          "type": "checkbox",
           "value": true
         },
         "Check Box4": {
-          "type": "checkbox",
           "value": true
         },
         "Text1": {
-          "type": "text",
           "value": "TEST_Text1"
         },
         "List Box6": {
-          "type": "picklist",
           "value": "Honda",
           "options": [
             "Honda",
@@ -35,7 +28,6 @@
           ]
         },
         "Dropdown7": {
-          "type": "picklist",
           "value": "Acura",
           "options": [
             "Acura",
@@ -43,7 +35,6 @@
           ]
         },
         "Date8_af_date": {
-          "type": "text",
           "value": "TEST_Date8_af_date"
         }
       }
@@ -51,27 +42,22 @@
     "Form.pdf": {
       "fields": {
         "FullName": {
-          "type": "text",
           "value": "TEST_FullName"
         },
         "ID": {
-          "type": "text",
           "value": "TEST_ID"
         },
         "Gender": {
-          "type": "checkbox",
-          "value": true,
+          "value": "Male",
           "options": [
             "Male",
             "Female"
           ]
         },
         "Married": {
-          "type": "checkbox",
           "value": true
         },
         "City": {
-          "type": "picklist",
           "value": "New York",
           "options": [
             "New York",
@@ -82,7 +68,6 @@
           ]
         },
         "Language": {
-          "type": "picklist",
           "value": "English",
           "options": [
             "English",
@@ -92,11 +77,9 @@
           ]
         },
         "Notes": {
-          "type": "text",
           "value": "TEST_Notes"
         },
         "ResetButton": {
-          "type": "checkbox",
           "value": true
         }
       }
@@ -104,31 +87,24 @@
     "Sample-Fillable-PDF.pdf": {
       "fields": {
         "Option 1": {
-          "type": "checkbox",
           "value": true
         },
         "Option 2": {
-          "type": "checkbox",
           "value": true
         },
         "Option 3": {
-          "type": "checkbox",
           "value": true
         },
         "Name of Dependent": {
-          "type": "text",
           "value": "TEST_Name of Dependent"
         },
         "Age\t of Dependent": {
-          "type": "text",
           "value": "TEST_Age\t of Dependent"
         },
         "Name": {
-          "type": "text",
           "value": "TEST_Name"
         },
         "Dropdown2": {
-          "type": "picklist",
           "value": "Choice 1",
           "options": [
             "Choice 1",
