@@ -1,0 +1,24 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^python - <<'PYTHON'\nimport PyPDF2, json, os\nsamples=\\[\"form_to_flatten\\.pdf\",\"Form\\.pdf\",\"Sample-Fillable-PDF\\.pdf\"\\]\nroot=\"c:/usr/form-to-pdf\"\nprint\\('pythoned'\\)\nfor name in samples:\n    path=os\\.path\\.join\\(root,'samples',name\\)\n    try:\n        reader=PyPDF2\\.PdfReader\\(path\\)\n        if reader\\.acro_form is None:\n            print\\(name,'no acro'\\)\n            continue\n        fields=reader\\.get_fields\\(\\)\n        print\\(name,'fields',fields\\.keys\\(\\) if fields else None\\)\n    except Exception as e:\n        print\\('failed',name,e\\)\nPYTHON$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python -c \"import PyPDF2, os; root='c:/usr/form-to-pdf'; samples=\\['form_to_flatten\\.pdf','Form\\.pdf','Sample-Fillable-PDF\\.pdf'\\];\nfor name in samples:\n    path=os\\.path\\.join\\(root,'samples',name\\)\n    try:\n        reader=PyPDF2\\.PdfReader\\(path\\)\n        fields=reader\\.get_fields\\(\\)\n        print\\(name,'=>', list\\(fields\\.keys\\(\\)\\) if fields else 'no fields'\\)\n    except Exception as e:\n        print\\('error',name,e\\)\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python c:/usr/form-to-pdf/list_fields\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^exit\\(\\)$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python c:\\\\usr\\\\form-to-pdf\\\\list_fields\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
