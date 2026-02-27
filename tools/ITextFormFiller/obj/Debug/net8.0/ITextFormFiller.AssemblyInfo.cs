@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ITextFormFiller")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+986836a298f2e71676e47136a4715810fddaa054")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a24bea38aba09453b48d3a9ee2bfade0e79d8d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ITextFormFiller")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ITextFormFiller")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

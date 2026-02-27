@@ -1,0 +1,144 @@
+{
+  "form_to_flatten.pdf": {
+    "source": "samples/form_to_flatten.pdf",
+    "fields": {
+      "Group2": {
+        "type": "checkbox",
+        "jsonPath": "$.documents['form_to_flatten.pdf'].fields['Group2'].value"
+      },
+      "Group3": {
+        "type": "checkbox",
+        "jsonPath": "$.documents['form_to_flatten.pdf'].fields['Group3'].value"
+      },
+      "Group4": {
+        "type": "checkbox",
+        "jsonPath": "$.documents['form_to_flatten.pdf'].fields['Group4'].value"
+      },
+      "Check Box3": {
+        "type": "checkbox",
+        "jsonPath": "$.documents['form_to_flatten.pdf'].fields['Check Box3'].value"
+      },
+      "Check Box4": {
+        "type": "checkbox",
+        "jsonPath": "$.documents['form_to_flatten.pdf'].fields['Check Box4'].value"
+      },
+      "Text1": {
+        "type": "text",
+        "jsonPath": "$.documents['form_to_flatten.pdf'].fields['Text1'].value"
+      },
+      "List Box6": {
+        "type": "picklist",
+        "jsonPath": "$.documents['form_to_flatten.pdf'].fields['List Box6'].value",
+        "options": [
+          "Honda",
+          "Toyota"
+        ]
+      },
+      "Dropdown7": {
+        "type": "picklist",
+        "jsonPath": "$.documents['form_to_flatten.pdf'].fields['Dropdown7'].value",
+        "options": [
+          "Acura",
+          "Infinity"
+        ]
+      },
+      "Date8_af_date": {
+        "type": "text",
+        "jsonPath": "$.documents['form_to_flatten.pdf'].fields['Date8_af_date'].value"
+      }
+    }
+  },
+  "Form.pdf": {
+    "source": "samples/Form.pdf",
+    "fields": {
+      "FullName": {
+        "type": "text",
+        "jsonPath": "$.documents['Form.pdf'].fields['FullName'].value"
+      },
+      "ID": {
+        "type": "text",
+        "jsonPath": "$.documents['Form.pdf'].fields['ID'].value"
+      },
+      "Gender": {
+        "type": "checkbox",
+        "jsonPath": "$.documents['Form.pdf'].fields['Gender'].value",
+        "options": [
+          "Male",
+          "Female"
+        ]
+      },
+      "Married": {
+        "type": "checkbox",
+        "jsonPath": "$.documents['Form.pdf'].fields['Married'].value"
+      },
+      "City": {
+        "type": "picklist",
+        "jsonPath": "$.documents['Form.pdf'].fields['City'].value",
+        "options": [
+          "New York",
+          "London",
+          "Berlin",
+          "Paris",
+          "Rome"
+        ]
+      },
+      "Language": {
+        "type": "picklist",
+        "jsonPath": "$.documents['Form.pdf'].fields['Language'].value",
+        "options": [
+          "English",
+          "German",
+          "French",
+          "Italian"
+        ]
+      },
+      "Notes": {
+        "type": "text",
+        "jsonPath": "$.documents['Form.pdf'].fields['Notes'].value"
+      },
+      "ResetButton": {
+        "type": "checkbox",
+        "jsonPath": "$.documents['Form.pdf'].fields['ResetButton'].value"
+      }
+    }
+  },
+  "Sample-Fillable-PDF.pdf": {
+    "source": "samples/Sample-Fillable-PDF.pdf",
+    "fields": {
+      "Option 1": {
+        "type": "checkbox",
+        "jsonPath": "$.documents['Sample-Fillable-PDF.pdf'].fields['Option 1'].value"
+      },
+      "Option 2": {
+        "type": "checkbox",
+        "jsonPath": "$.documents['Sample-Fillable-PDF.pdf'].fields['Option 2'].value"
+      },
+      "Option 3": {
+        "type": "checkbox",
+        "jsonPath": "$.documents['Sample-Fillable-PDF.pdf'].fields['Option 3'].value"
+      },
+      "Name of Dependent": {
+        "type": "text",
+        "jsonPath": "$.documents['Sample-Fillable-PDF.pdf'].fields['Name of Dependent'].value"
+      },
+      "Age\t of Dependent": {
+        "type": "text",
+        "jsonPath": "$.documents['Sample-Fillable-PDF.pdf'].fields['Age\t of Dependent'].value"
+      },
+      "Name": {
+        "type": "text",
+        "jsonPath": "$.documents['Sample-Fillable-PDF.pdf'].fields['Name'].value"
+      },
+      "Dropdown2": {
+        "type": "picklist",
+        "jsonPath": "$.documents['Sample-Fillable-PDF.pdf'].fields['Dropdown2'].value",
+        "options": [
+          "Choice 1",
+          "Choice 2",
+          "Choice 3",
+          "Choice 4"
+        ]
+      }
+    }
+  }
+}

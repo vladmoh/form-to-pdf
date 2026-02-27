@@ -1,0 +1,119 @@
+{
+  "documents": {
+    "form_to_flatten.pdf": {
+      "fields": {
+        "Group2": {
+          "value": true
+        },
+        "Group3": {
+          "value": true
+        },
+        "Group4": {
+          "value": true
+        },
+        "Check Box3": {
+          "value": true
+        },
+        "Check Box4": {
+          "value": true
+        },
+        "Text1": {
+          "value": "TEST_Text1"
+        },
+        "List Box6": {
+          "value": "Honda",
+          "options": [
+            "Honda",
+            "Toyota"
+          ]
+        },
+        "Dropdown7": {
+          "value": "Acura",
+          "options": [
+            "Acura",
+            "Infinity"
+          ]
+        },
+        "Date8_af_date": {
+          "value": "TEST_Date8_af_date"
+        }
+      }
+    },
+    "Form.pdf": {
+      "fields": {
+        "FullName": {
+          "value": "TEST_FullName"
+        },
+        "ID": {
+          "value": "TEST_ID"
+        },
+        "Gender": {
+          "value": "Male",
+          "options": [
+            "Male",
+            "Female"
+          ]
+        },
+        "Married": {
+          "value": true
+        },
+        "City": {
+          "value": "New York",
+          "options": [
+            "New York",
+            "London",
+            "Berlin",
+            "Paris",
+            "Rome"
+          ]
+        },
+        "Language": {
+          "value": "English",
+          "options": [
+            "English",
+            "German",
+            "French",
+            "Italian"
+          ]
+        },
+        "Notes": {
+          "value": "TEST_Notes"
+        },
+        "ResetButton": {
+          "value": true
+        }
+      }
+    },
+    "Sample-Fillable-PDF.pdf": {
+      "fields": {
+        "Option 1": {
+          "value": true
+        },
+        "Option 2": {
+          "value": true
+        },
+        "Option 3": {
+          "value": true
+        },
+        "Name of Dependent": {
+          "value": "TEST_Name of Dependent"
+        },
+        "Age\t of Dependent": {
+          "value": "TEST_Age\t of Dependent"
+        },
+        "Name": {
+          "value": "TEST_Name"
+        },
+        "Dropdown2": {
+          "value": "Choice 1",
+          "options": [
+            "Choice 1",
+            "Choice 2",
+            "Choice 3",
+            "Choice 4"
+          ]
+        }
+      }
+    }
+  }
+}

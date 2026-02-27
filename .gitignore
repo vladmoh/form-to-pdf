@@ -1,0 +1,12 @@
+output/merged.pdf
+tools/ITextFormFiller/bin/Debug/net8.0/ITextFormFiller.dll
+tools/ITextFormFiller/bin/Debug/net8.0/ITextFormFiller.exe
+tools/ITextFormFiller/bin/Debug/net8.0/ITextFormFiller.pdb
+tools/ITextFormFiller/obj/Debug/net8.0/apphost.exe
+tools/ITextFormFiller/obj/Debug/net8.0/ITextFormFiller.AssemblyInfo.cs
+tools/ITextFormFiller/obj/Debug/net8.0/ITextFormFiller.AssemblyInfoInputs.cache
+tools/ITextFormFiller/obj/Debug/net8.0/ITextFormFiller.dll
+tools/ITextFormFiller/obj/Debug/net8.0/ITextFormFiller.pdb
+tools/ITextFormFiller/obj/Debug/net8.0/ITextFormFiller.sourcelink.json
+tools/ITextFormFiller/obj/Debug/net8.0/ref/ITextFormFiller.dll
+tools/ITextFormFiller/obj/Debug/net8.0/refint/ITextFormFiller.dll

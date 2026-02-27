@@ -12,9 +12,8 @@ class Program
     {
         var keepForms = args.Contains("--keep-forms") || args.Contains("--no-flatten");
 
-        var workspaceRoot = AppContext.BaseDirectory;
-        string repoRoot = FindRepoRoot(workspaceRoot);
-        Console.WriteLine($"Using repository root: {repoRoot}");
+        var repoRoot = Directory.GetCurrentDirectory();
+        Console.WriteLine($"Using workspace directory: {repoRoot}");
         var outputDir = Path.Combine(repoRoot, "output");
         Directory.CreateDirectory(outputDir);
         if (keepForms)
@@ -24,12 +23,12 @@ class Program
             Console.WriteLine("Will save each filled PDF individually under output/individual (flattened)");
         }
 
-        var mappingPath = Path.Combine(outputDir, "mapping.json");
-        var dataPath = Path.Combine(outputDir, "data.json");
+        var mappingPath = Path.Combine(repoRoot, "samples", "mapping.json");
+        var dataPath = Path.Combine(repoRoot, "samples", "data.json");
 
         if (!File.Exists(mappingPath) || !File.Exists(dataPath))
         {
-            Console.WriteLine("mapping.json or data.json not found in output/. Run the config generator first.");
+            Console.WriteLine("mapping.json or data.json not found in samples/. Run the config generator first.");
             return 1;
         }
 
@@ -168,25 +167,5 @@ class Program
             Console.WriteLine("Each filled PDF has been flattened and saved under output/individual; no merged file was created.");
         }
         return 0;
-    }
-
-    static string FindRepoRoot(string start)
-    {
-        var dir = new DirectoryInfo(start);
-        while (dir != null)
-        {
-            // look for top-level markers unique to the repository root
-            bool hasToolsFolder = Directory.Exists(Path.Combine(dir.FullName, "tools"));
-            bool hasRootScript = File.Exists(Path.Combine(dir.FullName, "fill_and_merge.py")) ||
-                                 File.Exists(Path.Combine(dir.FullName, "generate_json.py")) ||
-                                 File.Exists(Path.Combine(dir.FullName, "list_fields.py"));
-            if (hasToolsFolder && hasRootScript)
-            {
-                return dir.FullName;
-            }
-            dir = dir.Parent;
-        }
-        // fallback to original start if nothing found
-        return start;
     }
 }
